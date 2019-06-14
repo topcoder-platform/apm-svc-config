@@ -36,6 +36,11 @@ monitors:
   - type: trace-forwarder
     listenAddress: 0.0.0.0:9080
     sendInternalMetrics: true
-  - type: internal-metrics
+    metricsToExclude:
+      - metricNames:          
+        - sfxagent.trace_spans_sent
+        - sfxagent.trace_spans_dropped
+        negated: true
+  - type: internal-metric
 
 enableBuiltInFiltering: true
