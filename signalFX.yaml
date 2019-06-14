@@ -36,5 +36,6 @@ monitors:
   - type: trace-forwarder
     listenAddress: 0.0.0.0:9080
     sendInternalMetrics: true
+  - type: internal-metrics
 
 enableBuiltInFiltering: true
