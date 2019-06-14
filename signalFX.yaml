@@ -35,5 +35,6 @@ monitors:
   - type: docker-container-stats
   - type: trace-forwarder
     listenAddress: 0.0.0.0:9080
+    sendInternalMetrics: true
 
 enableBuiltInFiltering: true
